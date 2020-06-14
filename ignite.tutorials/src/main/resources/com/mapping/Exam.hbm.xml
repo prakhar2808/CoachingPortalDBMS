@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dbmsproject.ignite.tutorials.model.Exam" table="exam">
+        <composite-id>
+		    <key-property name="ExamId">
+		    	<column name="ExamId" />
+		    </key-property>
+		    <key-property name="CourseId">
+		    	<column name="CourseId" />
+		    </key-property>
+		</composite-id>
+        <property name="ExamName">
+            <column name="ExamName" />
+        </property>
+        <property name="ExamDate">
+            <column name="ExamDate" />
+        </property>
+        <property name="StartTiming">
+            <column name="StartTiming" />
+        </property>
+        <property name="EndTiming">
+            <column name="EndTiming" />
+        </property>
+    </class>
+</hibernate-mapping>

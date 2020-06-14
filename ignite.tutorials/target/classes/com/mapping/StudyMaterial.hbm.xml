@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dbmsproject.ignite.tutorials.model.StudyMaterial" table="studyMaterial">
+        <composite-id>
+		    <key-property name="MaterialCode">
+		    	<column name="MaterialCode" />
+		    </key-property>
+		    <key-property name="CourseId">
+		    	<column name="CourseId" />
+		    </key-property>
+		</composite-id>
+        <property name="TopicName">
+            <column name="TopicName" />
+        </property>
+        <property name="Level">
+            <column name="Level" />
+        </property>
+    </class>
+</hibernate-mapping>

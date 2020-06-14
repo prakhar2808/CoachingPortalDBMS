@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dbmsproject.ignite.tutorials.model.StaffAttendance" table="staffAttendance">
+        <composite-id>
+		    <key-property name="StaffId">
+		    	<column name="StaffId" />
+		    </key-property>
+		    <key-property name="Date">
+		    	<column name="Date" />
+		    </key-property>
+		</composite-id>
+        <property name="isPresent">
+            <column name="isPresent" />
+        </property>
+    </class>
+</hibernate-mapping>

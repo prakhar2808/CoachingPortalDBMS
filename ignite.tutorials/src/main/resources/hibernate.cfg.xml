@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+ 
+   <session-factory>
+ 
+       <!-- JDBC connection pool (using the built-in) -->
+       <property name="connection.pool_size">1</property>
+ 
+       <!-- SQL dialect -->
+       <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+ 
+       <!-- Disable the second-level cache -->
+       <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+ 
+       <!-- Echo all executed SQL to stdout -->
+       <property name="show_sql">true</property>
+       
+       <!-- Format the generated Sql -->
+       <property name="format_sql">true</property>
+ 
+       <!-- Dont Drop and re-create the database schema on startup,Just update it -->
+       <property name="hbm2ddl.auto">update</property>
+ 
+       <mapping resource="com/mapping/Admin.hbm.xml"/>
+       <mapping resource="com/mapping/Guardian.hbm.xml"/>
+       <mapping resource="com/mapping/Staff.hbm.xml"/>
+       <mapping resource="com/mapping/Student.hbm.xml"/>
+       <mapping resource="com/mapping/Teacher.hbm.xml"/>
+       <mapping resource="com/mapping/Course.hbm.xml"/>
+       <mapping resource="com/mapping/Batch.hbm.xml"/>
+       <mapping resource="com/mapping/Exam.hbm.xml"/>
+       <mapping resource="com/mapping/Result.hbm.xml"/>
+       <mapping resource="com/mapping/Subject.hbm.xml"/>
+       <mapping resource="com/mapping/Teaches.hbm.xml"/>
+       <mapping resource="com/mapping/StudyMaterial.hbm.xml"/>
+       <mapping resource="com/mapping/StudentAttendance.hbm.xml"/>
+       <mapping resource="com/mapping/TeacherAttendance.hbm.xml"/>
+       <mapping resource="com/mapping/StaffAttendance.hbm.xml"/>
+       <mapping resource="com/mapping/Enrollment.hbm.xml"/>
+   </session-factory>
+ 
+</hibernate-configuration>

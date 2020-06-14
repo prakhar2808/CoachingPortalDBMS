@@ -1,0 +1,13 @@
+
+		<tr>
+			<td><form:label path="studentAttendance[${i.index}].date">Date</form:label></td>
+			<td><form:input path="studentAttendance[${i.index}].date" value="${attendanceObj.date}" required="required"/></td> 
+		</tr>
+		<tr>
+			<td>Is Present ? :</td>
+			<td>
+				<form:select path="studentAttendance[${i.index}].isPresent" required="required">
+		  			<form:options items="${yesOrNo}" />
+	       		</form:select>
+        	</td>
+		</tr>

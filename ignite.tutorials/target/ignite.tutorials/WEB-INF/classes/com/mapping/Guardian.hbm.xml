@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.dbmsproject.ignite.tutorials.model.Guardian" table="guardian">
+    	<id name="GuardianId" type="int">
+            <column name="GuardianId" />
+            <generator class="assigned" />
+        </id>
+        <property name="Password">
+            <column name="Password" />
+        </property>
+        <property name="FirstName">
+            <column name="FirstName" />
+        </property>
+        <property name="LastName">
+            <column name="LastName"/>
+        </property>
+        <property name="Gender">
+            <column name="Gender" />
+        </property>
+        <property name="Dob">
+            <column name="Dob" />
+        </property>
+        <property name="HouseNo">
+            <column name="HouseNo" />
+        </property>
+        <property name="Street">
+            <column name="Street" />
+        </property>
+        <property name="City">
+            <column name="City" />
+        </property>
+        <property name="Occupation">
+            <column name="Occupation" />
+        </property>
+    </class>
+</hibernate-mapping>

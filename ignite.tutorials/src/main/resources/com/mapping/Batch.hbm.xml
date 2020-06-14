@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dbmsproject.ignite.tutorials.model.Batch" table="batch">
+        <composite-id>
+		    <key-property name="BatchId">
+		    	<column name="BatchId" />
+	    	</key-property>
+		    <key-property name="CourseId">
+		    	<column name="CourseId" />
+	    	</key-property>
+		</composite-id>
+        <property name="RoomNo">
+            <column name="RoomNo" />
+        </property>
+        <property name="StartTiming">
+            <column name="StartTiming" />
+        </property>
+        <property name="EndTiming">
+            <column name="EndTiming" />
+        </property>
+    </class>
+</hibernate-mapping>

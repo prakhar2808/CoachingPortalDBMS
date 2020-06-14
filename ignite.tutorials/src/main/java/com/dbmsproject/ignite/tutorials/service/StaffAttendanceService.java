@@ -1,0 +1,18 @@
+package com.dbmsproject.ignite.tutorials.service;
+
+import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.dbmsproject.ignite.tutorials.model.StaffAttendance;
+
+@Component
+public interface StaffAttendanceService {
+	public void addStaffAttendance(StaffAttendance obj);
+
+	public ArrayList<StaffAttendance> getAttendance(Date date);
+
+	public List<StaffAttendance> getAllAttendanceByStaffId(int staffId);
+}

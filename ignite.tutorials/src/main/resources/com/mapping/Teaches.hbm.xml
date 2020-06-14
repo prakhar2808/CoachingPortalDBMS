@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dbmsproject.ignite.tutorials.model.Teaches" table="teaches">
+        <composite-id>
+		    <key-property name="TeacherId">
+		    	<column name="TeacherId" />
+		    </key-property>
+		    <key-property name="BatchId">
+		    	<column name="BatchId" />
+		    </key-property>
+		    <key-property name="CourseId">
+		    	<column name="CourseId" />
+		    </key-property>
+		</composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dbmsproject.ignite.tutorials.model.Enrollment" table="enrollment">
+        <composite-id>
+		    <key-property name="RollNo">
+		    	<column name="RollNo" />
+		    </key-property>
+		    <key-property name="BatchId">
+		    	<column name="BatchId" />
+		    </key-property>
+		    <key-property name="CourseId">
+		    	<column name="CourseId" />
+		    </key-property>
+		</composite-id>
+        <property name="TransactionNo">
+            <column name="TransacationNo" />
+        </property>
+        <property name="JoinDate">
+            <column name="JoinDate" />
+        </property>
+        <property name="EndDate">
+            <column name="EndDate" />
+        </property>
+        <property name="EnrolledBy">
+            <column name="EnrolledBy" />
+        </property>
+    </class>
+</hibernate-mapping>
